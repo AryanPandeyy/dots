@@ -1,0 +1,38 @@
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	bc="bc -ql" \
+	rsync="rsync -vrPlu" \
+	mkd="mkdir -pv" \
+	yt="yt-dlp --embed-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ytt="yt --skip-download --write-thumbnail" \
+	ffmpeg="ffmpeg -hide_banner"
+
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	gic="git clone" \
+	gicd="git clone --depth=1" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi" \
+	ip="ip -color=auto"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	ka="killall" \
+	g="git" \
+	e="$EDITOR" \
+	v="nvim" \
+	p="pacman" \
+	z="zathura" \
+	vc="nvim ~/.config/nvim" \
+	kk="yazi" \
+        irc="kitten ssh -t tilde tmux new -A -s irc" \
+        mm="neomutt"
+
+#alias \
+#	lf="lfub" \
